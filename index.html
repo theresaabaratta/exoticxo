@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ExoticXO | Male & Female Exotic Dancers Delivered Nationwide | Book Tonight</title>
+<meta name="description" content="ExoticXO delivers stunning female strippers and elite male exotic dancers to your home, hotel, or party bus in 250+ cities nationwide. Book your private show in minutes.">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:opsz,wght@6..96,500;6..96,700;6..96,800&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --xo-noir:#0d0a12;
+  --xo-velvet:#1b1124;
+  --xo-rose:#ff2e88;
+  --xo-rose-deep:#d4136b;
+  --xo-champagne:#e8c77d;
+  --xo-lilac:#bdb2cc;
+  --xo-white:#fff6fb;
+}
+body{background:var(--xo-noir);color:var(--xo-lilac);font-family:'Jost',sans-serif;font-weight:300;font-size:1.05rem;line-height:1.7;}
+h1,h2,h3,.display-font{font-family:'Bodoni Moda',serif;color:var(--xo-white);}
+.eyebrow{font-family:'Jost',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.32em;text-transform:uppercase;color:var(--xo-champagne);}
+a{color:var(--xo-rose);text-decoration:none;}
+a:hover{color:var(--xo-white);}
+
+/* Nav */
+.navbar{background:rgba(13,10,18,.92);backdrop-filter:blur(8px);border-bottom:1px solid rgba(232,199,125,.18);}
+.navbar-brand{font-family:'Bodoni Moda',serif;font-weight:800;font-size:1.6rem;color:var(--xo-white)!important;letter-spacing:.04em;}
+.navbar-brand span{color:var(--xo-rose);}
+.nav-link{color:var(--xo-lilac)!important;font-weight:500;letter-spacing:.06em;text-transform:uppercase;font-size:.82rem;}
+.nav-link:hover{color:var(--xo-champagne)!important;}
+
+/* Buttons */
+.btn-xo{background:var(--xo-rose);color:#fff;font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.85rem 2.1rem;border-radius:50rem;border:0;font-size:.9rem;box-shadow:0 0 28px rgba(255,46,136,.35);}
+.btn-xo:hover{background:var(--xo-rose-deep);color:#fff;transform:translateY(-2px);box-shadow:0 0 38px rgba(255,46,136,.5);}
+.btn-xo-ghost{border:1px solid var(--xo-champagne);color:var(--xo-champagne);font-weight:600;letter-spacing:.08em;text-transform:uppercase;padding:.85rem 2.1rem;border-radius:50rem;font-size:.9rem;}
+.btn-xo-ghost:hover{background:var(--xo-champagne);color:var(--xo-noir);}
+.btn-xo,.btn-xo-ghost{transition:all .25s ease;}
+
+/* Hero */
+.hero{position:relative;padding:7.5rem 0 5.5rem;overflow:hidden;background:radial-gradient(ellipse at 70% 20%,rgba(255,46,136,.14),transparent 55%),radial-gradient(ellipse at 15% 85%,rgba(232,199,125,.08),transparent 50%),var(--xo-noir);}
+.hero h1{font-size:clamp(2.6rem,5.5vw,4.4rem);font-weight:800;line-height:1.05;}
+.hero h1 em{font-style:italic;color:var(--xo-rose);}
+.xo-watermark{position:absolute;right:-4rem;top:-3rem;font-family:'Bodoni Moda',serif;font-weight:800;font-size:26rem;line-height:1;color:transparent;-webkit-text-stroke:1px rgba(232,199,125,.12);pointer-events:none;user-select:none;}
+.lead-pitch{font-size:1.18rem;color:var(--xo-white);font-weight:400;}
+
+/* Photos */
+.xo-photo{width:100%;border-radius:14px;object-fit:cover;background:linear-gradient(135deg,var(--xo-velvet),#2a1738);border:1px solid rgba(232,199,125,.22);box-shadow:0 18px 50px rgba(0,0,0,.55);}
+.xo-photo-tall{aspect-ratio:3/4;}
+.xo-photo-wide{aspect-ratio:16/10;}
+.photo-frame{position:relative;}
+.photo-frame::after{content:"XO";position:absolute;bottom:14px;right:18px;font-family:'Bodoni Moda',serif;font-weight:700;color:var(--xo-champagne);font-size:.95rem;letter-spacing:.15em;opacity:.85;}
+
+/* Sections */
+.section{padding:4.5rem 0;}
+.divider-xo{display:flex;align-items:center;gap:1rem;justify-content:center;margin:0 auto;max-width:420px;}
+.divider-xo::before,.divider-xo::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,rgba(232,199,125,.5));}
+.divider-xo::after{background:linear-gradient(90deg,rgba(232,199,125,.5),transparent);}
+.divider-xo span{font-family:'Bodoni Moda',serif;color:var(--xo-champagne);font-size:1.1rem;letter-spacing:.2em;}
+.card-xo{background:var(--xo-velvet);border:1px solid rgba(232,199,125,.16);border-radius:16px;padding:2.2rem;height:100%;}
+.card-xo h3{font-size:1.45rem;color:var(--xo-champagne);}
+.step-num{font-family:'Bodoni Moda',serif;font-size:2.6rem;font-weight:800;color:var(--xo-rose);line-height:1;}
+
+/* CTA band */
+.cta-band{background:linear-gradient(120deg,#2a0f22,#3a1030 55%,#241032);border-top:1px solid rgba(255,46,136,.35);border-bottom:1px solid rgba(255,46,136,.35);padding:4rem 0;text-align:center;}
+.cta-band h2{font-size:clamp(2rem,4vw,3rem);font-weight:800;}
+
+/* Footer */
+footer{background:#080610;border-top:1px solid rgba(232,199,125,.2);padding:4rem 0 2rem;font-size:.86rem;}
+footer h2{font-size:1.6rem;}
+.state-block{margin-bottom:1.6rem;break-inside:avoid;}
+.state-block h4{font-family:'Jost',sans-serif;font-size:.78rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--xo-champagne);margin-bottom:.45rem;}
+.state-block a{display:block;color:var(--xo-lilac);padding:.12rem 0;font-weight:300;}
+.state-block a:hover{color:var(--xo-rose);}
+.footer-cities{column-count:5;column-gap:2rem;}
+@media(max-width:1199px){.footer-cities{column-count:4;}}
+@media(max-width:991px){.footer-cities{column-count:3;}}
+@media(max-width:767px){.footer-cities{column-count:2;}}
+@media(prefers-reduced-motion:reduce){.btn-xo,.btn-xo-ghost{transition:none;}}
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Exotic<span>XO</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#xonav" aria-label="Toggle navigation"><span class="navbar-toggler-icon" style="filter:invert(1);"></span></button>
+    <div class="collapse navbar-collapse" id="xonav">
+      <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+        <li class="nav-item"><a class="nav-link" href="#dancers">Dancers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#occasions">Occasions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#how">How It Works</a></li>
+        <li class="nav-item"><a class="nav-link" href="#cities">Cities</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-xo btn-sm" href="tel:+18438889213">Call Now</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="xo-watermark">XO</div>
+  <div class="container position-relative">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="eyebrow mb-3">Nationwide Male &amp; Female Exotic Dancers</p>
+        <h1 class="mb-4">Hot Dancers.<br>Your Place.<br><em>Tonight.</em></h1>
+        <p class="lead-pitch mb-4">ExoticXO brings the party to you — stunning female strippers and chiseled male entertainers delivered straight to your home, hotel suite, or party bus in over 250 cities nationwide. One call locks in your dancer, your date, and your show. Most bookings are confirmed in under ten minutes, and tonight's calendar is filling fast. Don't wait until your first choice is taken: <a href="tel:+18438889213"><strong>call now</strong></a> or tap <strong>Book My Dancer</strong> and make your party the one nobody stops talking about.</p>
+        <div class="d-flex flex-wrap gap-3">
+          <a href="#book" class="btn btn-xo">Book My Dancer</a>
+          <a href="tel:+18438889213" class="btn btn-xo-ghost">18438889213</a>
+        </div>
+      </div>
+      <div class="col-lg-6">
+        <div class="row g-3">
+          <div class="col-7 photo-frame"><img src="images/femaleStripper.png" alt="Female exotic dancer performing a private striptease show" class="xo-photo xo-photo-tall"></div>
+          <div class="col-5 photo-frame mt-5"><img src="images/femalestripper2.png" alt=" exotic dancer at a private bachelorette party" class="xo-photo xo-photo-tall"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- DANCERS -->
+<section class="section" id="dancers">
+  <div class="container">
+    <div class="divider-xo mb-5"><span>XO</span></div>
+    <div class="row g-4">
+      <div class="col-md-6">
+        <div class="card-xo">
+          <p class="eyebrow mb-2">For the Boys</p>
+          <h3 class="mb-3">Female Exotic Dancers</h3>
+          <p>Gorgeous, professional female strippers who know how to own a room. From a smooth one-girl striptease to a two-girl showstopper with lap dances, games, and audience participation, every show is high-energy, fully choreographed, and tailored to your crowd.</p>
+          <a href="#book" class="fw-semibold">Book a female dancer &rarr;</a>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card-xo">
+          <p class="eyebrow mb-2">For the Girls</p>
+          <h3 class="mb-3">Male Revue Entertainers</h3>
+          <p>Chiseled, charismatic male entertainers straight out of a magic-style revue. Costumed entrances — cop, firefighter, military, cowboy — followed by a full striptease and lap dances that will have the bride-to-be blushing and the whole room screaming.</p>
+          <a href="#book" class="fw-semibold">Book a male dancer &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row g-3">
+      <div class="col-md-4 photo-frame"><img src="images/capstripper.png" alt="Bachelorette party with a male stripper in costume" class="xo-photo xo-photo-wide"></div>
+      <div class="col-md-4 photo-frame"><img src="images/stripperback.png" alt="Private in-home exotic dancer show" class="xo-photo xo-photo-wide"></div>
+      <div class="col-md-4 photo-frame"><img src="images/beckystripper.png" alt="Exotic dancers performing on a party bus" class="xo-photo xo-photo-wide"></div>
+    </div>
+  </div>
+</section>
+
+<!-- OCCASIONS -->
+<section class="section pt-0" id="occasions">
+  <div class="container text-center">
+    <p class="eyebrow mb-2">Any Excuse to Celebrate</p>
+    <h2 class="mb-4" style="font-weight:800;">One Night. Zero Regrets.</h2>
+    <p class="mx-auto mb-4" style="max-width:760px;">Bachelorette and bachelor parties are our signature, but ExoticXO dancers turn up for birthdays, divorce parties, girls' nights, guys' nights, retirement sendoffs, and "just because" celebrations. Shows run 30 to 90 minutes, arrive in costume, and come with their own music — all you bring is the crowd.</p>
+    <a href="#book" class="btn btn-xo">Check Availability</a>
+  </div>
+</section>
+
+<!-- HOW IT WORKS -->
+<section class="section pt-0" id="how">
+  <div class="container">
+    <div class="divider-xo mb-5"><span>XO</span></div>
+    <div class="row g-4 text-center">
+      <div class="col-md-4">
+        <div class="step-num mb-2">1</div>
+        <h3 class="h5">Call or Book Online</h3>
+        <p>Tell us your city, date, and headcount. We'll match you with available dancers and lock in your time slot on the spot.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="step-num mb-2">2</div>
+        <h3 class="h5">Pick Your Performer</h3>
+        <p>Browse photos of available entertainers in your area and choose your favorite — or let us send our top-rated performer.</p>
+      </div>
+      <div class="col-md-4">
+        <div class="step-num mb-2">3</div>
+        <h3 class="h5">Enjoy the Show</h3>
+        <p>Your dancer arrives on time, in costume, ready to perform. You relax, press play, and take all the credit.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY -->
+<section class="section pt-0">
+  <div class="container">
+    <div class="row align-items-center g-5">
+      <div class="col-lg-6">
+        <p class="eyebrow mb-2">Why ExoticXO</p>
+        <h2 class="mb-3" style="font-weight:800;">Booked Direct. Vetted. On Time.</h2>
+        <p>No sketchy middlemen, no no-shows, no surprises. Every ExoticXO entertainer is professionally vetted, experienced, and held to a strict on-time standard. Transparent pricing is quoted up front, and a real person answers the phone seven days a week. That's why thousands of parties across the country rebook us year after year.</p>
+        <a href="tel:+18438889213" class="btn btn-xo-ghost mt-2">Speak to a Booking Agent</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band" id="book">
+  <div class="container">
+    <p class="eyebrow mb-2">Dates Go Fast — Especially Weekends</p>
+    <h2 class="mb-3">Your Party Is One Call Away</h2>
+    <p class="mx-auto mb-4" style="max-width:640px;color:var(--xo-white);">Lock in your dancer before someone else does. Call now for instant availability and a free quote.</p>
+    <a href="tel:+18438889213" class="btn btn-xo btn-lg">Call 18438889213</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="cities">
+  <div class="container">
+    <div class="text-center mb-5">
+      <p class="eyebrow mb-2">Coast to Coast</p>
+      <h2 style="font-weight:800;">Cities We Service Nationwide</h2>
+    </div>
+    <div class="footer-cities">
+      <div class="state-block"><h4>Alabama</h4><a href="#">Birmingham</a><a href="#">Huntsville</a><a href="#">Montgomery</a><a href="#">Mobile</a><a href="#">Tuscaloosa</a></div>
+      <div class="state-block"><h4>Arizona</h4><a href="#">Phoenix</a><a href="#">Scottsdale</a><a href="#">Tucson</a><a href="#">Tempe</a><a href="#">Mesa</a><a href="#">Glendale</a></div>
+      <div class="state-block"><h4>Arkansas</h4><a href="#">Little Rock</a><a href="#">Fayetteville</a><a href="#">Fort Smith</a><a href="#">Hot Springs</a></div>
+      <div class="state-block"><h4>California</h4><a href="#">Los Angeles</a><a href="#">San Diego</a><a href="#">San Francisco</a><a href="#">Sacramento</a><a href="#">San Jose</a><a href="#">Fresno</a><a href="#">Palm Springs</a><a href="#">Anaheim</a></div>
+      <div class="state-block"><h4>Colorado</h4><a href="#">Denver</a><a href="#">Colorado Springs</a><a href="#">Boulder</a><a href="#">Fort Collins</a><a href="#">Aurora</a></div>
+      <div class="state-block"><h4>Connecticut</h4><a href="#">Hartford</a><a href="#">New Haven</a><a href="#">Stamford</a><a href="#">Bridgeport</a></div>
+      <div class="state-block"><h4>Delaware</h4><a href="#">Wilmington</a><a href="#">Dover</a><a href="#">Rehoboth Beach</a></div>
+      <div class="state-block"><h4>Florida</h4><a href="#">Miami</a><a href="#">Orlando</a><a href="#">Tampa</a><a href="#">Jacksonville</a><a href="#">Fort Lauderdale</a><a href="#">Key West</a><a href="#">Destin</a><a href="#">Panama City Beach</a></div>
+      <div class="state-block"><h4>Georgia</h4><a href="#">Atlanta</a><a href="#">Savannah</a><a href="#">Augusta</a><a href="#">Athens</a><a href="#">Columbus</a></div>
+      <div class="state-block"><h4>Idaho</h4><a href="#">Boise</a><a href="#">Coeur d'Alene</a><a href="#">Idaho Falls</a></div>
+      <div class="state-block"><h4>Illinois</h4><a href="#">Chicago</a><a href="#">Naperville</a><a href="#">Rockford</a><a href="#">Springfield</a><a href="#">Peoria</a></div>
+      <div class="state-block"><h4>Indiana</h4><a href="#">Indianapolis</a><a href="#">Fort Wayne</a><a href="#">Bloomington</a><a href="#">South Bend</a></div>
+      <div class="state-block"><h4>Iowa</h4><a href="#">Des Moines</a><a href="#">Cedar Rapids</a><a href="#">Iowa City</a><a href="#">Davenport</a></div>
+      <div class="state-block"><h4>Kansas</h4><a href="#">Wichita</a><a href="#">Kansas City</a><a href="#">Topeka</a><a href="#">Lawrence</a></div>
+      <div class="state-block"><h4>Kentucky</h4><a href="#">Louisville</a><a href="#">Lexington</a><a href="#">Bowling Green</a><a href="#">Covington</a></div>
+      <div class="state-block"><h4>Louisiana</h4><a href="#">New Orleans</a><a href="#">Baton Rouge</a><a href="#">Lafayette</a><a href="#">Shreveport</a></div>
+      <div class="state-block"><h4>Maine</h4><a href="#">Portland</a><a href="#">Bangor</a><a href="#">Augusta</a></div>
+      <div class="state-block"><h4>Maryland</h4><a href="#">Baltimore</a><a href="#">Annapolis</a><a href="#">Ocean City</a><a href="#">Rockville</a></div>
+      <div class="state-block"><h4>Massachusetts</h4><a href="#">Boston</a><a href="#">Worcester</a><a href="#">Springfield</a><a href="#">Cape Cod</a></div>
+      <div class="state-block"><h4>Michigan</h4><a href="#">Detroit</a><a href="#">Grand Rapids</a><a href="#">Ann Arbor</a><a href="#">Lansing</a><a href="#">Traverse City</a></div>
+      <div class="state-block"><h4>Minnesota</h4><a href="#">Minneapolis</a><a href="#">St. Paul</a><a href="#">Duluth</a><a href="#">Rochester</a></div>
+      <div class="state-block"><h4>Mississippi</h4><a href="#">Jackson</a><a href="#">Biloxi</a><a href="#">Gulfport</a><a href="#">Hattiesburg</a></div>
+      <div class="state-block"><h4>Missouri</h4><a href="#">St. Louis</a><a href="#">Kansas City</a><a href="#">Springfield</a><a href="#">Branson</a><a href="#">Columbia</a></div>
+      <div class="state-block"><h4>Montana</h4><a href="#">Billings</a><a href="#">Missoula</a><a href="#">Bozeman</a></div>
+      <div class="state-block"><h4>Nebraska</h4><a href="#">Omaha</a><a href="#">Lincoln</a><a href="#">Grand Island</a></div>
+      <div class="state-block"><h4>Nevada</h4><a href="#">Las Vegas</a><a href="#">Reno</a><a href="#">Henderson</a><a href="#">Lake Tahoe</a></div>
+      <div class="state-block"><h4>New Hampshire</h4><a href="#">Manchester</a><a href="#">Nashua</a><a href="#">Portsmouth</a></div>
+      <div class="state-block"><h4>New Jersey</h4><a href="#">Atlantic City</a><a href="#">Newark</a><a href="#">Jersey City</a><a href="#">Hoboken</a><a href="#">Trenton</a></div>
+      <div class="state-block"><h4>New Mexico</h4><a href="#">Albuquerque</a><a href="#">Santa Fe</a><a href="#">Las Cruces</a></div>
+      <div class="state-block"><h4>New York</h4><a href="#">New York City</a><a href="#">Buffalo</a><a href="#">Rochester</a><a href="#">Albany</a><a href="#">Syracuse</a><a href="#">The Hamptons</a></div>
+      <div class="state-block"><h4>North Carolina</h4><a href="#">Charlotte</a><a href="#">Raleigh</a><a href="#">Asheville</a><a href="#">Wilmington</a><a href="#">Greensboro</a><a href="#">Outer Banks</a></div>
+      <div class="state-block"><h4>North Dakota</h4><a href="#">Fargo</a><a href="#">Bismarck</a><a href="#">Grand Forks</a></div>
+      <div class="state-block"><h4>Ohio</h4><a href="#">Columbus</a><a href="#">Cleveland</a><a href="#">Cincinnati</a><a href="#">Dayton</a><a href="#">Toledo</a></div>
+      <div class="state-block"><h4>Oklahoma</h4><a href="#">Oklahoma City</a><a href="#">Tulsa</a><a href="#">Norman</a></div>
+      <div class="state-block"><h4>Oregon</h4><a href="#">Portland</a><a href="#">Eugene</a><a href="#">Bend</a><a href="#">Salem</a></div>
+      <div class="state-block"><h4>Pennsylvania</h4><a href="#">Philadelphia</a><a href="#">Pittsburgh</a><a href="#">Allentown</a><a href="#">Harrisburg</a><a href="#">Scranton</a></div>
+      <div class="state-block"><h4>Rhode Island</h4><a href="#">Providence</a><a href="#">Newport</a><a href="#">Warwick</a></div>
+      <div class="state-block"><h4>South Carolina</h4><a href="#">Charleston</a><a href="#">Myrtle Beach</a><a href="#">Columbia</a><a href="#">Greenville</a><a href="#">Hilton Head</a></div>
+      <div class="state-block"><h4>South Dakota</h4><a href="#">Sioux Falls</a><a href="#">Rapid City</a><a href="#">Deadwood</a></div>
+      <div class="state-block"><h4>Tennessee</h4><a href="#">Nashville</a><a href="#">Memphis</a><a href="#">Knoxville</a><a href="#">Chattanooga</a><a href="#">Gatlinburg</a></div>
+      <div class="state-block"><h4>Texas</h4><a href="#">Houston</a><a href="#">Dallas</a><a href="#">Austin</a><a href="#">San Antonio</a><a href="#">Fort Worth</a><a href="#">El Paso</a><a href="#">Galveston</a><a href="#">South Padre Island</a></div>
+      <div class="state-block"><h4>Utah</h4><a href="#">Salt Lake City</a><a href="#">Park City</a><a href="#">Provo</a><a href="#">St. George</a></div>
+      <div class="state-block"><h4>Vermont</h4><a href="#">Burlington</a><a href="#">Montpelier</a><a href="#">Stowe</a></div>
+      <div class="state-block"><h4>Virginia</h4><a href="#">Virginia Beach</a><a href="#">Richmond</a><a href="#">Norfolk</a><a href="#">Arlington</a><a href="#">Charlottesville</a></div>
+      <div class="state-block"><h4>Washington</h4><a href="#">Seattle</a><a href="#">Spokane</a><a href="#">Tacoma</a><a href="#">Bellevue</a></div>
+      <div class="state-block"><h4>Washington, DC</h4><a href="#">Washington, DC</a></div>
+      <div class="state-block"><h4>West Virginia</h4><a href="#">Charleston</a><a href="#">Morgantown</a><a href="#">Huntington</a></div>
+      <div class="state-block"><h4>Wisconsin</h4><a href="#">Milwaukee</a><a href="#">Madison</a><a href="#">Green Bay</a><a href="#">Wisconsin Dells</a></div>
+      <div class="state-block"><h4>Wyoming</h4><a href="#">Cheyenne</a><a href="#">Jackson Hole</a><a href="#">Casper</a></div>
+    </div>
+    <hr style="border-color:rgba(232,199,125,.2);" class="my-4">
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-2 text-center">
+      <p class="mb-0">&copy; 2026 ExoticXO. All rights reserved. Adults 18+ only. Entertainment services only.</p>
+      <p class="mb-0"><a href="tel:+18438889213" class="fw-semibold" style="color:var(--xo-champagne);">18438889213</a> &middot; Available 7 Days a Week</p>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
